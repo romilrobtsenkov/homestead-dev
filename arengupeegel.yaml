@@ -1,6 +1,6 @@
 ---
-name: "elu"
-ip: "192.168.10.10"
+name: "arengupeegel"
+ip: "192.168.10.11"
 memory: 2048
 cpus: 1
 provider: virtualbox
@@ -11,13 +11,14 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: ~/Github/ELU
-      to: /home/vagrant/code/ELU
+    - map: ~/Github/arengupeegel
+      to: /home/vagrant/code/arengupeegel
 
 sites:
-    - map: elu.test
-      to: /home/vagrant/code/ELU/public
-      type: apache
+    - map: arengupeegel.test
+      to: /home/vagrant/code/arengupeegel/public
+      type: nginx
+      php: "5.6"
 
 databases:
     - homestead

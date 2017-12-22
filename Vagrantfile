@@ -7,7 +7,7 @@ require 'yaml'
 VAGRANTFILE_API_VERSION ||= "2"
 confDir = $confDir ||= File.expand_path(File.dirname(__FILE__))
 
-homesteadYamlPath = confDir + "/elu.yaml"
+homesteadYamlPath = confDir + "/arengupeegel.yaml"
 homesteadJsonPath = confDir + "/Homestead.json"
 afterScriptPath = confDir + "/after.sh"
 aliasesPath = confDir + "/aliases"
