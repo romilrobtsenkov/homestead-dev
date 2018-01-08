@@ -17,7 +17,7 @@ folders:
 sites:
     - map: arengupeegel.test
       to: /home/vagrant/code/arengupeegel
-      php: "7.1"
+      php: "5.6"
 
 databases:
     - homestead
